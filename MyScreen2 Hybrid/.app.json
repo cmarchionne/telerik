@@ -1,15 +1,69 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true,
+  "views": [
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "homeModel",
+          "dataProvider": "defaultProvider",
+          "collection": "dbo_Bills",
+          "headerField": "Title",
+          "subHeaderField": "Description",
+          "masterDetails": true,
+          "detailHeaderField": "Title",
+          "detailSubHeaderField": "Description",
+          "detailDescriptionField": "Amount",
+          "pullToRefresh": true,
+          "endlessScroll": false
+        }
+      ],
+      "name": "home",
+      "title": "Data List",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "defaultProvider",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "name": "authenticationView",
+      "title": "Authentication",
+      "addToNavigation": true,
+      "icon": "contacts"
+    }
+  ],
   "dataProviders": [
     {
       "type": "dataProvider",
-      "title": "DefaultProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
       "name": "defaultProvider",
+      "title": "DefaultProvider",
       "source": "everlive",
-      "offlineStorage": true,
       "everliveKey": "a4kpKZk55v6TvLlq",
-      "everliveUrl": ""
+      "offlineStorage": true
     }
-  ]
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "drawer",
+  "view": "authenticationView",
+  "skin": "flat"
 }

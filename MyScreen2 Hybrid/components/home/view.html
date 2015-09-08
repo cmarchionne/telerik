@@ -1,0 +1,14 @@
+<div data-role="view" data-title="Data List" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
+    <!-- START_CUSTOM_CODE_home -->
+    <!-- END_CUSTOM_CODE_home -->
+    <ul data-role="listview" data-style="inset" data-template="homeModelTemplate" data-bind="{ source: homeModel.dataSource, events: {click: homeModel.itemClick}}" data-pull-to-refresh="true" data-endless-scroll="false">
+    </ul>
+    <!-- START_CUSTOM_CODE_homeModel -->
+    <!-- END_CUSTOM_CODE_homeModel -->
+    <script type="text/x-kendo-template" id="homeModelTemplate">
+        <div class="image-with-text">
+            <h3>#: data['Title'] #</h3>
+            <p>#: data['Description'] #</p>
+        </div>
+    </script>
+</div>
