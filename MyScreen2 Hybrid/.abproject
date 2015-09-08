@@ -1,0 +1,48 @@
+{
+  "ProjectName": "MyScreen2 Hybrid",
+  "ProjectGuid": "967910f5-be36-4b32-82f1-9528768df709",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.MyScreen2Hybrid",
+  "DisplayName": "MyScreen2 Hybrid",
+  "Author": "",
+  "Description": "MyScreen2 Hybrid",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{c777d60d-7075-4799-9ac4-c031bda8e93d}",
+  "WP8ProductID": "{bd8afcd9-e4f9-4a54-8b3b-f7c4b926681f}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.MyScreen2Hybrid",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "org.apache.cordova.network-information"
+  ]
+}
